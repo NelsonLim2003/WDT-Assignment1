@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <link rel="icon" href="img/favicon.png" type="image/png" >
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="vendors/linericon/style.css" >
+    <link rel="stylesheet" href="css/font-awesome.min.css" >
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" >
+    <link rel="stylesheet" href="css/magnific-popup.css" >
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" >
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" >
+    <style>
+      .pt-100 {
+        padding-top: 100px;
+      }
+      .pb-100 {
+        padding-bottom: 100px;
+      }
+      .section-title {
+        margin-bottom: 60px;
+      }
+      .section-title p {
+        color: #777;
+        font-size: 16px;
+      }
+      .section-title h4 {
+        text-transform: capitalize;
+        font-size: 40px;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      .section-title h4:before {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 2px;
+        background-color: #ff3636;
+        bottom: 0;
+        left: 50%;
+        margin-left: -30px;
+      }
+      .section-title h4:after {
+        position: absolute;
+        background-color: #ff3636;
+        content: "";
+        width: 10px;
+        height: 10px;
+        bottom: -4px;
+        left: 50%;
+        margin-left: -5px;
+        border-radius: 50%;
+      }
+      ul.timeline-list {
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+      ul.timeline-list:before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 100%;
+        background-color: #ff3636;
+        left: 50%;
+        top: 0;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+      ul.timeline-list li {
+        position: relative;
+        clear: both;
+        display: table;
+      }
+      .timeline_content {
+        border: 2px solid #ff3636;
+        background-color: #fff;
+      }
+      ul.timeline-list li .timeline_content {
+        width: 45%;
+        color: #333;
+        padding: 30px;
+        float: left;
+        text-align: right;
+      }
+      ul.timeline-list li:nth-child(2n) .timeline_content {
+        float: right;
+        text-align: left;
+      }
+      .timeline_content h4 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      ul.timeline-list li:before {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: #ff3636;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+      .timeline_content span {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: poppins;
+        color: #ff3636;
+      }
+      /* Mobile View */
+      @media screen and (max-width: 600px) {
+        .timeline-list {
+          padding-left: 0;
+          list-style: none;
+        }
+        .timeline_content {
+          position: relative;
+          background-color: #f9f9f9;
+          border-left: 2px solid #3498db;
+          padding: 20px;
+          margin-bottom: 20px;
+          min-height: 150px; /* Set a minimum height for each timeline box */
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .timeline_content span {
+          font-weight: bold;
+          margin-bottom: 5px; /* Adjust spacing between date and title */
+          display: block;
+        }
+        .timeline_content h4 {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        .timeline_content p {
+          font-size: 14px; /* Adjust font size for better readability */
+          line-height: 1.6; /* Increase line height for easier reading */
+          margin-bottom: 0; /* Remove default margin to manage spacing */
+          overflow: hidden; /* Ensure text doesn't overflow */
+          text-overflow: ellipsis; /* Add ellipsis for long texts */
+          display: -webkit-box;
+          -webkit-line-clamp: 3; /* Limit number of lines displayed */
+          -webkit-box-orient: vertical;
+        }
+        
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <!--================ Start Header Area =================-->
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_header" href="index.html"
+              ><img
+                src="img/Nelprofilelogo.png"
+                style="height: 35px; width: 140px"
+                alt=""
+            ></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav justify-content-end">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="education.html"
+                    >Educational Qualifications</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="experience.html"
+                    >Working Experience</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--================ End Header Area =================-->
+
+    <!--================ Start Home Banner Area =================-->
+    <section class="home_banner_area">
+      <div class="banner_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div
+                class="banner_content"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
+                <h3 class="text-uppercase">Hell0</h3>
+                <h1 class="text-uppercase">I am Nelson Lim</h1>
+                <h5 class="text-uppercase">Diploma Student of MDIS</h5>
+                <div class="d-flex align-items-center">
+                  <a
+                    class="primary_btn"
+                    href="https://drive.google.com/file/d/182ox9nE06kvv3rj1i0XfxG8DAfdz71EL/view"
+                    target="_blank"
+                    ><span>Get CV</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="home_right_img">
+                <img class="" src="img/banner/home-right.png" alt="" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Home Banner Area =================-->
+
+    <!--================ Start Skills Area =================-->
+    <div class="container text-center">
+      <h1>Skills</h1>
+      <p>
+        Here are the skills I have learnt throughout the years from ITE until
+        MDIS
+      </p>
+      <div class="row justify-content-center">
+        <!-- DESIGN -->
+        <div class="card col-lg-6 col-md-6 col-sm-6">
+          <div class="card-body">
+            <h5 class="card-title">Design</h5>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png"
+                width="24"
+                height="24"
+                alt="Adobe Photoshop"
+              >
+              Adobe Photoshop
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968525.png"
+                width="24"
+                height="24"
+                alt="Adobe Premire Pro"
+              >
+              Adobe Premire Pro
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968472.png"
+                width="24"
+                height="24"
+                alt="Adobe Illustrator"
+              >
+              Adobe Illustrator
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5611/5611129.png"
+                width="24"
+                height="24"
+                alt="Adobe XD"
+              >
+              Adobe XD
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5611/5611024.png"
+                width="24"
+                height="24"
+                alt="Adobe Animate"
+              >
+              Adobe Animate
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968428.png"
+                width="24"
+                height="24"
+                alt="Adobe After Effects"
+              >
+              Adobe After Effects
+            </button>
+          </div>
+        </div>
+        <!-- PROGRAMMING -->
+        <div class="card col-lg-6 col-md-6 col-sm-6">
+          <div class="card-body">
+            <h5 class="card-title">Programming</h5>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/174/174854.png"
+                width="24"
+                height="24"
+                alt="HTML5"
+              >
+              HTMLS
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                width="24"
+                height="24"
+                alt="CSS3"
+              >
+              CSS3
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                width="24"
+                height="24"
+                alt="JavaScript"
+              >
+              JavaScript
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png"
+                width="24"
+                height="24"
+                alt="PHP"
+              >
+              PHP
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/16575/16575219.png"
+                width="24"
+                height="24"
+                alt="jQuery"
+              >
+              jQuery
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4492/4492311.png"
+                width="24"
+                height="24"
+                alt="SQL"
+              >
+              SQL
+            </button>
+          </div>
+        </div>
+        <!-- TOOLS -->
+        <div class="card col-lg-6 col-md-6 col-sm-6">
+          <div class="card-body">
+            <h5 class="card-title">Tools</h5>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"
+                width="24"
+                height="24"
+                alt="Figma"
+              >
+              Figma
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAARVBMVEVHcEwieq4qfrBIi7cmfK8je68pfrAlfK8lfK8qfrAtf7EpfbBAi7htp8knfbAlfK8fea0lfK8sf7GMu9YlfK9Wlb06h7XuOcrtAAAAF3RSTlMAFnGvgEO3//OJXsYJMeSn/zXWJJl83zOPYi8AAADTSURBVHgBYqAYACojCyQJYhgGKqgM8/3/p0eOF5JZUpGq2mxjnXM+nKJIUWpMyVreyJ4yVdcDfZsrDCw0oh059v9wLFmY/gv8F50LtnRi2joxLeulOra5gEHdPFRVOe3qGhwlZOzUnEAmir5wpJU1TgLb1dZsMSPJFUO3VYU90JB0gIP2mLJJBvDygg1R37HkIAATOW/Xr6QekCWC3G2UV1MPvWuUybeVMCnWyO6A1URI0x2Az7NiJReI7B0MQLgUBcJdWQMs44XBjLmalZalenyqHwueD71S0+L2AAAAAElFTkSuQmCC"
+                width="24"
+                height="24"
+                alt="MAMP"
+              >
+              MAMP
+            </button>
+            <button class="btn btn-outline-primary">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+                width="24"
+                height="24"
+                alt="Github"
+              >
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================ End Skills Area =================-->
+    <hr >
+    <!--================ Start Timeline Area =================-->
+    <section class="experience pt-100 pb-100" id="experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 mx-auto text-center">
+            <div class="section-title">
+              <h4>Timeline</h4>
+              <p>Journey of my life</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <ul class="timeline-list">
+              <!-- Single Experience -->
+              <li>
+                <div
+                  class="timeline_content"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span>2010 - 2015</span>
+                  <h4>Monfort Junior School</h4>
+                  <p>
+                    On my first day of school, I followed the routine and joined
+                    the Music Club initially, but switched to the Environmental
+                    Club later. English is my favorite subject because I enjoy
+                    writing stories. I bonded with friends over Minecraft.
+                    Archery during our annual activities was an exciting
+                    experience where I learned to shoot a bow and arrow.
+                  </p>
+                </div>
+              </li>
+              <!-- Single Experience -->
+              <li>
+                <div
+                  class="timeline_content"
+                  data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span>2016-2019</span>
+                  <h4>Punggol Secondary School</h4>
+                  <p>
+                    On my first day of school, I followed the usual routine but
+                    opted for the Environmental Club, where we focused on
+                    recycling, weed removal, and promoting greenery. Computer
+                    Applications (CPA) became my favorite subject, and I
+                    achieved an A in the National Exams.
+                  </p>
+                </div>
+              </li>
+              <!-- Single Experience -->
+              <li>
+                <div
+                  class="timeline_content"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span>2020-2022</span>
+                  <h4>Nitec in Web Applications</h4>
+                  <p>
+                    During my Nitec days, I broke away from my primary and
+                    secondary school routines. I made friends who shared my
+                    interests in gaming and parkour. I also learned new
+                    activities like watching anime and playing different games,
+                    while applying skills in basic coding and web development
+                    from my lecturers.
+                  </p>
+                </div>
+              </li>
+              <!-- Single Experience -->
+              <li>
+                <div
+                  class="timeline_content"
+                  data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span>Jan 2021 - Mar 2021</span>
+                  <h4>Website Tester Intern (X0PA.AI)</h4>
+                  <p>
+                    During my 10-week internship from January to March 2021, I
+                    focused on testing the Empauwer website by X0PA AI,
+                    dedicated to supporting individuals with special needs in
+                    the workplace. I also created social media posts
+                    occasionally.
+                  </p>
+                </div>
+              </li>
+              <!-- Single Experience -->
+              <li>
+                <div
+                  class="timeline_content"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span>2022-2024</span>
+                  <h4>Higher Nitec in Interactive Design</h4>
+                  <p>
+                    During my Higher Nitec days, I departed from my routines in
+                    primary and secondary school. I bonded with friends who
+                    shared my interests in gaming and parkour. I explored new
+                    activities like watching anime and playing unfamiliar games,
+                    while applying skills in basic coding and web development
+                    learned from my lecturers.
+                  </p>
+                </div>
+              </li>
+              <!-- Single Experience -->
+              <li>
+                <div
+                  class="timeline_content"
+                  data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span>Oct 2023 - Mar 2024</span>
+                  <h4>Website Developer Intern (Kokoro Marketing)</h4>
+                  <p>
+                    From October 2023 to February 2024, during my 20-week stint
+                    at Kokoro Marketing, I designed the company logo with Adobe
+                    Illustrator, crafted website blueprints using Adobe XD, and
+                    developed the site using PHP and WordPress. I also provided
+                    feedback on the website and created new concepts.
+                  </p>
+                </div>
+              </li>
+              <!-- Single Experience -->
+              <li>
+                <div
+                  class="timeline_content"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span>2024-Present</span>
+                  <h4>
+                    International Diploma in Information Technology (MDIS)
+                  </h4>
+                  <p>
+                    I'm currently pursuing an International Foundation Diploma
+                    in IT and finding it enjoyable. I particularly like Computer
+                    Studies, where I learn hardware and software fundamentals;
+                    Web Development Technology, which enhances my skills in
+                    creating websites using Google Sites; and Database
+                    Information Management, which teaches database creation and
+                    management.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Timeline Area =================-->
+    <hr >
+    <!--================ Start Contact Me Area =================-->
+    <section class="experience pt-100 pb-100" >
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 mx-auto text-center">
+            <div class="section-title">
+              <h4>Contact</h4>
+
+              <p>
+                Feel free to reach out to me at
+                <a href="mailto:2003nelson.weezhe@gmail.com"
+                  >2003nelson.weezhe@gmail.com</a
+                >
+                for any questions or opportunities!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Contact Me Area =================-->
+    <hr >
+    <!--================Footer Area =================-->
+    <footer class="footer_area" style="background-image: url('img/subscribe-bg.png'); background-size: cover; background-repeat: no-repeat;">
+      <div class="container">
+        <div class="row justify-content-center pb-2">
+          <div class="col-lg-12">
+            <div class="footer_top flex-column">
+              <div class="footer_logo">
+                <a href="#">
+                  <img src="img/Nelprofilelogo.gif" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer_bottom justify-content-center">
+          <p class="col-lg-8 col-sm-12 footer-text text-white">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--================End Footer Area =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
